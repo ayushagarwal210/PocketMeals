@@ -15,6 +15,8 @@
     content: "";
     background-color: black;
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -62,7 +64,7 @@
     display: flex;
     flex-direction: column;
     padding: 8px 300px;
-    height: 400px;
+    height: 480px;
     justify-content: center;
     align-items: center;
 }
@@ -71,7 +73,9 @@
     content: "";
     background:url('../images/bg5.png') no-repeat center center/cover;
     position: absolute;
-    height: 100%;
+    top: 0px;
+    left: 0px;
+    height: 88%;
     width: 100%;
     z-index: -1;
     opacity: 0.5;
@@ -88,9 +92,34 @@
     font-size: 1.5rem;
 }
 
+/* Services Section */
+#services{
+    display: flex;
+    margin: 34px;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 12px;
+    margin: 3px 6px;
+    border-radius: 24px;
+}
+
+#services .box img{
+    height: 240px;
+    margin: auto;
+    display: block;
+}
+
 /* Utility Classes */
 .h-primary{
     font-size: 3.5rem;
+    padding: 12px;
+    margin-top: 70px;
+}
+
+.h-secondary{
+    font-size: 2.5rem;
     padding: 12px;
 }
 
@@ -104,4 +133,9 @@
     border-radius: 20px;
     cursor: pointer;
 }
+
+.center{
+    text-align: center;
+}
+
 
